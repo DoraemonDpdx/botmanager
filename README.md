@@ -19,4 +19,4 @@ If you get errors / bugs just create a issue and I will try to respond as soon a
 I think this much is fine for proofs.
 
 # Support Cybernetics Development 
-If you can [donate](https://paypal.me/dpdx) to us if not possible then join our [Discord Server](https://dsc.gg/dpdx).
+If you can [donate](https://paypal.me/dpdxgamer) to us if not possible then join our [Discord Server](https://dsc.gg/dpdx).
