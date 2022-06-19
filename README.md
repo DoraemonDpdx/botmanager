@@ -4,7 +4,7 @@ You can simply use the code by downloading / using **Upload from Github** in rep
 You have to edit all the channel/roles/category id's.
 
 # Can I contribute?
-Yes you can contribute by joining our [Discord Server](https://discord.com/invite/hHjs8wzPds) and giving a star to the repo.
+Yes you can contribute by joining our [Discord Server](https://dsc.gg/dpdx) and giving a star to the repo.
 If using this code, we should not forget milrato as this is coded by them.
 
 # What if we get errors / bugs?
@@ -19,4 +19,4 @@ If you get errors / bugs just create a issue and I will try to respond as soon a
 I think this much is fine for proofs.
 
 # Support Cybernetics Development 
-If you can [donate](https://paypal.me/cyberneticsdev) to us if not possible then join our [Discord Server](https://discord.com/invite/hHjs8wzPds).
+If you can [donate](https://paypal.me/dpdx) to us if not possible then join our [Discord Server](https://dsc.gg/dpdx).
