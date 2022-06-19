@@ -8,8 +8,8 @@
 
     //GUESS THE NUMBER
     client.on("messageCreate", async (msg) => {
-        if (msg.channel.id == "952581650666115082") {
-            let emojis = ["<:Cybernetics:960770246577373204>", "🥰", "🤩", "😎", "😇", "😍", "🙃", "💝", "❤️", "👀", "🟢", "✅", "🔥", "🌊", "✨", "💫", "💯", "<:rainbowplanetvtg:936931809806147614>", "<:blob_xD:966312566433390633>", "👑", "💓", "💞", "🙏"];
+        if (msg.channel.id == "983012001439698954") {
+            let emojis = ["<a:settings:906790686634950678>", "🥰", "🤩", "😎", "😇", "😍", "🙃", "💝", "❤️", "👀", "🟢", "✅", "🔥", "🌊", "✨", "💫", "💯", "<:rainbowplanetvtg:936931809806147614>", "<:blob_xD:966312566433390633>", "👑", "💓", "💞", "🙏"];
             let emoji1 = emojis[Math.floor(Math.random() * emojis.length)];
             const index = emojis.indexOf(emoji1);
             if (index > -1) {
