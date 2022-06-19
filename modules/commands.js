@@ -126,7 +126,7 @@ module.exports = async(client) => {
                         const offline = "<:nodeerror:947132546410500237>";
                         const embed = new Discord.MessageEmbed()
                             .setColor(client.config.color)
-                            .setAuthor("Cybernetics Development | Nodestats", message.guild.iconURL({ dynamic: true }), "https://")
+                            .setAuthor("Dpdx Development | Nodestats", message.guild.iconURL({ dynamic: true }), "https://")
                             client.allServers.stats.forEach(stat => {
                                 embed.addField(`${stat.ram != 1 ? online : offline} Server **\`${stat.key}\`**`, `> Ram: \`${(stat.ram * 100).toFixed(0)}% of ${stat.totalram.split(".")[0]} ${stat.totalram.split(" ")[1]}\`\n> Hosting Bots: \`${stat.bots}\`\n> Cores: \`${stat.cores}\`\n> Stor: \`${Math.floor(stat.storage / stat.totalstorage * 100).toFixed(0)}% of ${formatBytes(stat.totalstorage, 0)}\``, true)
                                 if(stat?.key == "27") {
@@ -148,7 +148,7 @@ module.exports = async(client) => {
                     } else if (cmd == "setupticket") {
                         if (message.member.permissions.has("ADMINISTRATOR")) {
                             let embed = new Discord.MessageEmbed()
-                            .setTitle("Cybernetics Development | Ticket Support")
+                            .setTitle("Dpdx Development | Ticket Support")
                             .setDescription(`This is the official [Cybernetics Development](https://) ticket support.\n\nOptionally, you can contact us by email **sujallakra42@gmail.com**`)
                             .setColor(client.config.color)
                             let menuoptions = require("../settings.json").ticketsystem;
@@ -215,7 +215,7 @@ module.exports = async(client) => {
                                 themessage_ = await message.channel.messages.fetch(id).catch(() => {}) || false;
                             }
                             let embed = new Discord.MessageEmbed()
-                            .setTitle("Cybernetics Development | Order")
+                            .setTitle("Dpdx Development | Order")
                             .setDescription(`
 <a:right_arrow_yellow:947541936762388590> **Please take a Look at our [prices](https://discord.com/channels/934213686468423780/936392309065523221/944276114988220477) as well as at our [payment options](https://discord.com/channels/934213686468423780/936392309065523221/944952969961553970)**
 
@@ -232,7 +232,7 @@ module.exports = async(client) => {
 
 <a:right_arrow_yellow:947541936762388590> ***To open a Order-Ticket click on the Selection down below!***`)
 .setDescription(`
-If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and you checked the [prices](https://discord.com/channels/914099997639868417/952581649063903242/965897144504569897) first, chose your wished bot in the drop-down menu down below.
+If you want to buy a Bot from [Cybernetics](https://discord.dpdxgamer.ga) and you checked the [prices](https://discord.com/channels/914099997639868417/952581649063903242/965897144504569897) first, chose your wished bot in the drop-down menu down below.
 \n***Available Bots are:***\n
 > - **Clan/System Bot** 🤖
 > 
@@ -243,7 +243,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
 > - **Mod Mail Bot** 📨
 > 
 > - **Waitingroom Bot** 🕐
-\nFor further questions about our pricing, please contact our marketing team at **marketing@kooje.me**`)
+\nFor further questions about our pricing, please contact our marketing team at **marketing@'.me**`)
                             .setColor(client.config.color)
                         let menuoptions = require("../settings.json").ordersystem;
                             //define the selection
@@ -290,7 +290,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                      * STAFF RANKING SYSTEM
                      */
                     else if (cmd === "lb" || cmd == "leaderboard") {
-                        if (message.member.roles.highest.rawPosition >= message.guild.roles.cache.get("952581446340575243").rawPosition) {
+                        if (message.member.roles.highest.rawPosition >= message.guild.roles.cache.get("983011782559957012").rawPosition) {
                             //got only the ranking points from THIS GUILD
                             let ids = client.staffrank.keyArray();
                             let filtered = [];
@@ -366,7 +366,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                 message.reply("<a:no:935038661303603210> **You are not allowed to execute this Command!** You need to be a part of the STAFF TEAM!")
             }
         } else if (cmd === "rank") {
-            if (message.member.roles.highest.rawPosition >= message.guild.roles.cache.get("952581446340575243").rawPosition) {
+            if (message.member.roles.highest.rawPosition >= message.guild.roles.cache.get("983011782559957012").rawPosition) {
                 let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
                 let user = member.user;
                 client.staffrank.ensure(user.id, {
@@ -504,7 +504,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                 let BotType = "Default";
                 if (BotDir === "SYSTEMBOTS") {
                     BotType = "System Bot";
-                    if (!message.channel.parent || message.channel.parentId != "952581550271250472") {
+                    if (!message.channel.parent || message.channel.parentId != "983011931902312478") {
                         errrored = true;
                         interaction.message.edit({
                             components: [],
@@ -517,7 +517,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
 
                 if (BotDir === "MusicBots") {
                     BotType = "Music Bot";
-                    if (!message.channel.parent || message.channel.parentId != "952581550271250472") {
+                    if (!message.channel.parent || message.channel.parentId != "983011933789757450") {
                         errrored = true;
                         interaction.message.edit({
                             components: [],
@@ -1075,7 +1075,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                                 config.status.text = status;
                                 config.status.type = statustype ? statustype : "PLAYING";
                                 config.status.url = statusurl ? statusurl : "https://twitch.tv/#";
-                                config.ownerIDS = ["552060563602276362"];
+                                config.ownerIDS = ["744134908078719114"];
                                 config.ownerIDS.push(owner);
                                 config.prefix = prefix;
                                 config.token = token;
@@ -1276,7 +1276,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                                  */
                                 try {
                                     message.guild.members.fetch(owner).then(member => {
-                                        member.roles.add("952581463327514665").catch(() => {})
+                                        member.roles.add("983011800268283985").catch(() => {})
                                         if(member.roles.cache.has("952581465026211880")) {
                                             member.roles.remove("952581465026211880").catch(() => {})
                                             tempmsfg.embeds[0].fields[4].name = `<a:tick:927612765382782987> Adding Finished Role & Removed recover Role`
@@ -1340,8 +1340,8 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                                 message.channel.send({
                                     content: `<@${owner}> | **Created by: <@${message.author.id}> (\`${message.author.tag}\` | \`${message.author.id}\`)**`,
                                     embeds: [new Discord.MessageEmbed().setColor(client.config.color).addField("📯 Invite link: ", `> [Click here](https://discord.com/oauth2/authorize?client_id=${botuser.id}&scope=bot&permissions=8)`)
-                                        .addField("💛 Support us", `> **Please give us <#937678247011954738> and stop at <#941439058629001246> so that we can continue hosting Bots!**`).setTitle(`\`${botuser.tag}\` is online and ready 2 be used!`).setDescription(`<@${botuser.id}> is a **${BotType}** and got added to: <@${owner}> Wallet!\nTo get started Type: \`${prefix}help\``).setThumbnail(botuser.displayAvatarURL())
-                                        .addField("<:like:938142052087124008> Rate us on TRUSTPILOT", `> ***We would love it, if you could give us a __HONEST__ Rating on [Trustpilot](https://de.trustpilot.com/review/kooje.me)*** <3`)
+                                        .addField("💛 Support us", `> **Please give us <#983012001439698954> and stop at <#983012033735831592> so that we can continue hosting Bots!**`).setTitle(`\`${botuser.tag}\` is online and ready 2 be used!`).setDescription(`<@${botuser.id}> is a **${BotType}** and got added to: <@${owner}> Wallet!\nTo get started Type: \`${prefix}help\``).setThumbnail(botuser.displayAvatarURL())
+                                        .addField("<:like:938142052087124008> Rate us on TRUSTPILOT", `> ***We would love it, if you could give us a __HONEST__ Rating on [Trustpilot](https://de.trustpilot.com/review/s.me)*** <3`)
                                     ]
                                 })
                                 ch.send({
@@ -1384,7 +1384,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                                 config.status.text = status;
                                 config.status.type = statustype ? statustype : "PLAYING";
                                 config.status.url = statusurl ? statusurl : "https://twitch.tv/#";
-                                config.ownerIDS = ["552060563602276362"];
+                                config.ownerIDS = ["744134908078719114"];
                                 config.ownerIDS.push(owner);
                                 config.prefix = prefix;
                                 config.token = token;
@@ -1469,7 +1469,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
 
                                     try {
                                         message.guild.members.fetch(owner).then(member => {
-                                            member.roles.add("952581463327514665").catch(() => {})
+                                            member.roles.add("983011800268283985").catch(() => {})
                                             if(member.roles.cache.has("952581465026211880")) {
                                                 member.roles.remove("952581465026211880").catch(() => {})
                                                 tempmsfg.embeds[0].fields[4].name = `<a:tick:927612765382782987> Adding Finished Role & Removed recover Role`
@@ -1515,7 +1515,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                                             user.send({
                                                 content: `<@${owner}> | **Created by: <@${message.author.id}> (\`${message.author.tag}\` | \`${message.author.id}\`)**`,
                                                 embeds: [new Discord.MessageEmbed().setColor(client.config.color).addField("📯 Invite link: ", `> [Click here](https://discord.com/oauth2/authorize?client_id=${botuser.id}&scope=bot&permissions=8)`)
-                                                    .addField("💛 Support us", `> **Please give us <#937678247011954738> and stop at <#941439058629001246> so that we can continue hosting Bots!**`).setTitle(`\`${botuser.tag}\` is online and ready 2 be used!`).setDescription(`<@${botuser.id}> is a **${BotType}** and got added to: <@${owner}> Wallet!\nTo get started Type: \`${prefix}help\``).setThumbnail(botuser.displayAvatarURL())
+                                                    .addField("💛 Support us", `> **Please give us <#983012001439698954> and stop at <#983012033735831592> so that we can continue hosting Bots!**`).setTitle(`\`${botuser.tag}\` is online and ready 2 be used!`).setDescription(`<@${botuser.id}> is a **${BotType}** and got added to: <@${owner}> Wallet!\nTo get started Type: \`${prefix}help\``).setThumbnail(botuser.displayAvatarURL())
                                                 ]
                                             }).catch(() => {})
                                         }).catch(() => {})
@@ -1525,8 +1525,8 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                                     message.channel.send({
                                         content: `<@${owner}> | **Created by: <@${message.author.id}> (\`${message.author.tag}\` | \`${message.author.id}\`)**`,
                                         embeds: [new Discord.MessageEmbed().setColor(client.config.color).addField("📯 Invite link: ", `> [Click here](https://discord.com/oauth2/authorize?client_id=${botuser.id}&scope=bot&permissions=8)`)
-                                            .addField("💛 Support us", `> **Please give us <#937678247011954738> and stop at <#941439058629001246> so that we can continue hosting Bots!**`).setTitle(`\`${botuser.tag}\` is online and ready 2 be used!`).setDescription(`<@${botuser.id}> is a **${BotType}** and got added to: <@${owner}> Wallet!\nTo get started Type: \`${prefix}help\``).setThumbnail(botuser.displayAvatarURL())
-                                            .addField("Rate us on TRUSTPILOT", `> ***We would love it, if you could give us a __HONEST__ Rating on [Trustpilot](https://de.trustpilot.com/review/kooje.me)*** <3`)
+                                            .addField("💛 Support us", `> **Please give us <#983012001439698954> and stop at <#983012033735831592> so that we can continue hosting Bots!**`).setTitle(`\`${botuser.tag}\` is online and ready 2 be used!`).setDescription(`<@${botuser.id}> is a **${BotType}** and got added to: <@${owner}> Wallet!\nTo get started Type: \`${prefix}help\``).setThumbnail(botuser.displayAvatarURL())
+                                            .addField("Rate us on TRUSTPILOT", `> ***We would love it, if you could give us a __HONEST__ Rating on [Trustpilot](https://de.me)*** <3`)
                                         ]
                                     })
                                     ch.send({
@@ -1756,7 +1756,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                         create_transcript_buffer([...messageCollection.values()], message.channel, message.guild).then(async path => {
                             try { // try to send the file
                                 const attachment = new Discord.MessageAttachment(path); //send it as an attachment
-                                await client.channels.fetch("952581617682100224").then(async channel => {
+                                await client.channels.fetch("983011968644444170").then(async channel => {
                                     try {
                                         client.users.fetch(userid).then(async user => {
                                             await channel.send({
@@ -1965,14 +1965,14 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                 }
             })
 
-        } else if (cmd === "setradiant") {
+        } else if (cmd === "setdpdx") {
             if(!isValidTicket(message.channel)) return message.reply("<a:no:935038661303603210> This Channel is not a Ticket!");
             if (message.member.roles.highest.rawPosition < message.guild.roles.cache.get(Roles.SupporterRoleId).rawPosition) {
                 return message.reply("<a:no:935038661303603210> **You are not allowed to execute this Command!** Only Supporters or Higher!").then(m => m.delete({
                     timeout: 3500
                 }).catch(console.error)).catch(console.error);
             }
-            message.channel.setParent("952581586690396210").then(async () => {
+            message.channel.setParent("983011944887898172").then(async () => {
                 var { name } = message.channel;
                 var emoji = "💎";
                 if(name.includes(emoji)) return message.reply(`:x: **This Channel is already defined as \`${cmd}\`**`)
@@ -2014,7 +2014,7 @@ If you want to buy a Bot from [Cybernetics](https://discord-cybernetics.ml) and 
                         await delay(client.ws.ping);
                     }
                     //Send Approve Message
-                    m.edit(`👍 **Radiant is contacted, let's wait for his Response!**`)
+                    m.edit(`👍 **Dpdx is contacted, let's wait for his Response!**`)
                 })
                 
                 message.channel.setName(`${name.slice(0, name.indexOf("│") - 1)}${emoji}${name.slice(name.indexOf("│"))}`).catch((e) => {
