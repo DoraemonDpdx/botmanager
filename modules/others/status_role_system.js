@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 module.exports = client => {
-    let textInStats = "dsc.gg/cyberdev"
-    let textInStats2 = "radiant"
-    let guildId = "914099997639868417";
-    let roleId = "952581462299914311";
+    let textInStats = "dsc.gg/dpdx"
+    let textInStats2 = "dpdx"
+    let guildId = "863303592793079830";
+    let roleId = "983011806521999371";
     //when some1 changes his/her status
     client.on("presenceUpdate", async (oP, nP) => {
         let guild = client.guilds.cache.get(guildId)
