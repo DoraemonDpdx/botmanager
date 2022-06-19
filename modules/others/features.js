@@ -8,7 +8,7 @@
  const { createbot } = require("../../settings.json");
  module.exports = async (client) => {
  
-     let FeaturesChannelID = "952581649063903242"
+     let FeaturesChannelID = "983011999774568508"
      client.on('interactionCreate', async interaction => {
          if (!interaction.isSelectMenu()) return;
          if(interaction.message.channel.id == FeaturesChannelID) {
