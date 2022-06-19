@@ -2,7 +2,7 @@ const { MessageEmbed, MessageActionRow, MessageButton, MessageSelectMenu } = req
 
 module.exports = async (client) => {
 
-    const verifiedRoleId = "952581470550126662"
+    const verifiedRoleId = "983011809000849469"
 
     client.on("interactionCreate", async (interaction) => {
 
@@ -96,7 +96,7 @@ module.exports = async (client) => {
 
                         ephemeral: true,
 
-                        content: "👍 **Good Job!**\n> You successfully Verified yourself and I granted access to you for **Cybernetics Development**\n> :wave: Enjoy! Just incase you need to know something check out <#924696982264610846>",
+                        content: "👍 **Good Job!**\n> You successfully Verified yourself and I granted access to you for **Dpdx Development**\n> :wave: Enjoy! Just incase you need to know something check out <#924696982264610846>",
 
                         components: [],
 
